@@ -1,18 +1,19 @@
 ﻿using Oops_concept.inheritance;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Oops_concept
 {
     internal class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Console.WriteLine("welcome to the object oriented programs");
-            Console.WriteLine("1.inheritance program");
+            Console.WriteLine("1.inheritance program\n2.polymorphism program");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
                 case 1:
-
+                    Console.WriteLine("welcome to the inheritance program");
                     Car j = new Car();
                     j.carName = "kia sonet";
                     j.carModel = 2021;
@@ -30,6 +31,14 @@ namespace Oops_concept
                     //Console.WriteLine("car name is " + Car.carName);
                     //Vehicle.vehicleType = "car";
                     //Vehicle.VehicleDetails();
+                    break;
+                 case 2:
+                    Console.WriteLine("welcome to the polymorphism program");
+                    
+                    Calculator cal = new Calculator();
+                    cal.Add(5,4.5);
+                    cal.Add(5, 4);
+
                     break;
 
 
