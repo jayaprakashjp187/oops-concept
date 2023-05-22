@@ -14,11 +14,11 @@ namespace Oops_concept
             int c = i + j;
             Console.WriteLine("sum of" +i +"+" +j +"=" +c);
         }
-         public void Add(int i,double j)
+         public void Add(int i,float j)
         {
             Console.WriteLine(i);
             Console.WriteLine(j);
-            double c = i + j;
+            float c = i + j;
              Console.WriteLine("sum of" + i +"+" + j + "=" + c);
 
         }
