@@ -1,5 +1,6 @@
 ﻿using Oops_concept.Abstraction;
 using Oops_concept.inheritance;
+using System;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Oops_concept
@@ -9,7 +10,7 @@ namespace Oops_concept
        public static void Main(string[] args)
         {
             Console.WriteLine("welcome to the object oriented programs");
-            Console.WriteLine("1.inheritance program\n2.polymorphism methodoverloading program\n3.polymorphism method overriding\n4.Abstraction program");
+            Console.WriteLine("1.inheritance program\n2.polymorphism methodoverloading program\n3.polymorphism method overriding\n4.Abstraction program\n5.Encapsulation program");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -53,6 +54,16 @@ namespace Oops_concept
                     Student abs = new Student();
                     abs.StudentDetails(name, rollNumber);
                     Console.WriteLine("student marks in maths is " +abs.GetMarks());
+                    break;
+                  case 5:
+                    Console.WriteLine("welcome to the encapsulation program");
+                    Encapsulation e = new Encapsulation();
+                    string nam = "jp";
+                    int id = 103;
+                    e.setStudentName(nam);
+                    e.setStudentId(id);
+                    Console.WriteLine("student name is " +e.getStudentName());
+                    Console.WriteLine("student id is " + e.getStudentId());
                     break;
 
 
